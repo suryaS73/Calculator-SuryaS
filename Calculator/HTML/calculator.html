@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Calculator</title>
+     <link rel="icon" href="../Assets/favicon.ico">
+     <link rel="stylesheet" href="../CSS/calculator.css">
+     <script src="../JavaScript/calculator.js" defer></script>
+</head>
+<body>
+     <div id="container">
+          <form name="cform" >
+              <input name="Ans" id="display">
+              <br>
+              <input onmousedown="on()" class="a" type="button" value="1" onclick="cform.Ans.value+='1'" id="one">
+              <input onmousedown="tw()" class="a" type="button" value="2" onclick="cform.Ans.value+='2'" id="two">
+              <input onmousedown="th()" class="a" type="button" value="3" onclick="cform.Ans.value+='3'" id="three">
+              <input onmousedown="clicksound()" class="a" type="button" value="+" onclick="cform.Ans.value+='+'" id="pluse">
+              <br>
+              <input onmousedown="fou()" class="a" type="button" value="4" onclick="cform.Ans.value+='4'" id="four">
+              <input onmousedown="fi()" class="a" type="button" value="5" onclick="cform.Ans.value+='5'" id="five">
+              <input onmousedown="si()" class="a" type="button" value="6" onclick="cform.Ans.value+='6'" id="six">
+              <input onmousedown="clicksound()" class="a" type="button" value="-" onclick="cform.Ans.value+='-'" id="min">
+              <br>
+              <input onmousedown="se()" class="a" type="button" value="7" onclick="cform.Ans.value+='7'" id="seven">
+              <input onmousedown="ei()" class="a" type="button" value="8" onclick="cform.Ans.value+='8'" id="eight">
+              <input onmousedown="ni()" class="a" type="button" value="9" onclick="cform.Ans.value+='9'" id="nine">
+              <input onmousedown="clicksound()" class="a" type="button" value="x" onclick="cform.Ans.value+='*'" id="star">
+              <br>
+              <input onmousedown="clicksound()" class="a" type="button" value="%" onclick="cform.Ans.value+='%'" id="mod">
+              <input onmousedown="zero()" class="a" type="button" value="0" onclick="cform.Ans.value+='0'" id="ze">
+              <input onmousedown="clicksound()" class="a" type="button" value="." onclick="cform.Ans.value+='.'" id="dot">
+              <input onmousedown="clicksound()" class="a" type="button" value="/" onclick="cform.Ans.value+='/'" id="slas">
+              <br>
+              <input onmousedown="clicksound()" id="equal" class="a" type="button" value="=" onclick="cform.Ans.value=eval(cform.Ans.value)">
+              <input onmousedown="clicksound()" id="clear" class="a" type="button" value="c" onclick="cform.Ans.value=''">
+              <br>
+          </form>
+      </div> 
+      <div id="s73" ><marquee>73</marquee></div>
+</body>
+</html>
