@@ -1,3 +1,4 @@
+alert("If it is Mobile Always keep in desktop mode")
 function on()
 {
      var one=new Audio()
